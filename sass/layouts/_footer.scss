@@ -1,0 +1,231 @@
+.address-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+  }
+  
+  .contacts {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &-address-link {
+      display: inline-block;
+      width: 231px;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--main-color);
+      padding-bottom: 9px;
+      transition: color 250ms var(--main-cub);
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }
+  }
+  
+  .footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &-list {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
+  
+  
+  .contacts-link-mail {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 9px;
+    transition: color 250ms var(--main-cub);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .contacts-link-tel {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--main-cub);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+
+  
+  .span-footer {
+    color: var(--main-color);
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+  
+  
+  
+  .logo-link-footer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+ 
+  
+  .footer-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    fill: var(--main-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      border-radius: 50px;
+    }
+  }
+  
+ 
+  
+  
+  .right-side-footer {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+  }
+  
+  
+  
+ 
+  
+  .footer-container {
+    display: flex;
+    background: #2f303a;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: baseline;
+    &-left {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-right: 70px;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 206px;
+      height: 80px;
+      margin-right: 93px;
+    }
+  }
+  
+  .footer-container-third {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .third-footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: var(--main-color);
+  margin-bottom: 20px;
+  }
+  
+  
+  
+  .subscribe-div {
+    display: flex;
+  }
+  
+  .subscribe-email {
+    min-width: 358px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2F303A;
+  border-radius: 4px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  }
+  }
+  
+  
+
+  .subscribe-btn {
+    position: relative;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  padding: 10px 28px;
+  background: var(--accent-color);
+  border-radius: 4px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: box-shadow 250ms var(--main-cub);
+  color: var(--main-color);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  }
+  
+
+  .subscribe-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: var(--main-color);
+  }
