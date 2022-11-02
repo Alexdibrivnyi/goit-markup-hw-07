@@ -4,11 +4,8 @@
   }
   
   .team-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font(500, 16px, 1.18, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
     padding-bottom: 10px;
   }
@@ -31,8 +28,7 @@
     width: 44px;
     height: 44px;
     background-color: var(--main-color);
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     transition: background-color 250ms var(--main-cub);
     border-radius: 50px;
@@ -56,10 +52,8 @@
     padding-top: 94px;
     padding-bottom: 94px;
     &-text {
-      font-size: 16px;
-      line-height: 1.18;
+      @include font(null, 16px, 1.18, 0.03em);
       text-align: center;
-      letter-spacing: 0.03em;
       color: #757575;
       margin-bottom: 16px;
     }

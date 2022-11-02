@@ -21,15 +21,11 @@
   // }
   
   .all {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(null, 18px, 2, 0.06em);
     color: #212121;
     padding-bottom: 4px;
     &-text {
-      font-size: 16px;
-      line-height: 1.88;
-      letter-spacing: 0.03em;
+      @include font(null, 16px, 1.88, 0.03em);
       color: #757575;
     }
     &-list {
@@ -49,10 +45,9 @@
   }
   
   .portfolio-checklist {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    @extend %align-list;
     margin-bottom: 50px;
   }
   

@@ -4,46 +4,45 @@
       display: flex;
       gap: 50px;
     }
-    &-navigation {
-      display: flex;
-      align-items: center;
-    }
   }
+
+
+.navigation {
+  @extend %align-list;
+}
   
   .header-connect {
     display: flex;
     margin-left: auto;
   }
   
-  .header-container {
-    display: flex;
-    align-items: center;
+  .header__container {
+    @extend %align-list;
   }
   
   
-  .span-header {
-    color: #000000;
-  }
+ 
   
-  .logo-link {
+  .logo {
     font-family: "Raleway";
     font-style: normal;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(null, 26px, 1.19, 0.03em);
     color: var(--accent-color);
     text-decoration: none;
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
+
+  
+
+  .logo__part--dark {
+    color: #000000;
+  }
   
   
   .header-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, 14px, 1.14, 0.02em);
     color: #212121;
     &:hover,
     &:focus {
@@ -71,30 +70,10 @@
     margin-bottom: -1px; 
     }
   }
-  
-  
-  // .current::after {
-  //   content: " ";
-  //   display: block;
-  //   position: absolute;
-  //   width: 100%;
-  // height: 4px;
-  // bottom: -32px;
-  // left: 0;
-  // background: var(--accent-color);
-  // border-radius: 2px;
-  // margin-bottom: -1px; 
-  // }
-  
- 
-  
- 
+   
   
   .header-mail {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, 14px, 1.14, 0.02em);
     color: #757575;
     margin-right: 50px;
     transition: color 250ms var(--main-cub);
@@ -106,10 +85,7 @@
   
   
   .header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, 14px, 1.14, 0.02em);
     color: #757575;
     margin-left: 40px;
     transition: color 250ms var(--main-cub);

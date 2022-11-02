@@ -4,8 +4,7 @@
     &-soc-link {
       width: 170px;
       height: 92px;
-      display: flex;
-      align-items: center;
+      @extend %align-list;
       justify-content: center;
       fill: #afb1b8;
       border: 1px solid #afb1b8;
@@ -22,9 +21,8 @@
  
   
   .clients-list {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    @extend %align-list;
     gap: 30px;
   }
   

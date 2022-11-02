@@ -1,22 +1,16 @@
 .address-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  @include font(null, 14px, 1.71, 0.03em);
     color: var(--main-color);
   }
   
   .contacts {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
     &-address-link {
       display: inline-block;
       width: 231px;
-      font-size: 14px;
       font-style: normal;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
+      @include font(null, 14px, 1.71, 0.03em);
       color: var(--main-color);
       padding-bottom: 9px;
       transition: color 250ms var(--main-cub);
@@ -43,10 +37,7 @@
   .contacts-link-mail {
     display: inline-block;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(400, 14px, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
     padding-bottom: 9px;
     transition: color 250ms var(--main-cub);
@@ -59,10 +50,7 @@
   .contacts-link-tel {
     display: inline-block;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(400, 14px, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--main-cub);
     &:hover,
@@ -73,7 +61,7 @@
   
 
   
-  .span-footer {
+  .logo__part--light {
     color: var(--main-color);
     display: inline-block;
     padding-bottom: 20px;
@@ -81,12 +69,10 @@
   
   
   
-  .logo-link-footer {
+  .footer-logo {
     font-family: "Raleway";
     font-style: normal;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(null, 26px, 1.19, 0.03em);
     color: var(--accent-color);
     text-decoration: none;
   }
@@ -97,8 +83,7 @@
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     border-radius: 50px;
     fill: var(--main-color);
@@ -116,10 +101,7 @@
   .right-side-footer {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom: 20px;
@@ -142,8 +124,7 @@
       margin-right: 70px;
     }
     &-right {
-      display: flex;
-      align-items: center;
+      @extend %align-list;
       flex-wrap: wrap;
       width: 206px;
       height: 80px;
@@ -153,19 +134,14 @@
   
   .footer-container-third {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
   }
   
   .third-footer-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 16px, 0.03em);
   text-transform: uppercase;
-  
   color: var(--main-color);
   margin-bottom: 20px;
   }
@@ -185,10 +161,7 @@
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   &::placeholder {
-    font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
+    @include font(400, 16px, 1.25px, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   }
   }
@@ -199,20 +172,15 @@
     position: relative;
     font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88px;
+  @include font(700, 16px, 1.88px, 0.06em);
   width: 200px;
   height: 50px;
   border: 0px;
   padding: 10px 28px;
   background: var(--accent-color);
   border-radius: 4px;
-  
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   text-align: center;
-  letter-spacing: 0.06em;
   cursor: pointer;
   transition: box-shadow 250ms var(--main-cub);
   color: var(--main-color);

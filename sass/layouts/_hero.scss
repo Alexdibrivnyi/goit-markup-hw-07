@@ -1,9 +1,23 @@
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+.hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.hero__title {
+  @include font(900, 44px, 1.36, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
     max-width: 696px;
@@ -13,76 +27,56 @@
   
 
   
-  .main-title {
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+
   
   .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font(700, 36px, 1.16, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
       margin-bottom: 50px;
   }
   
   .item {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71, 0.03em);
     color: #757575;
   }
   
-  .advantages {
+  .picture-list {
     display: flex;
     gap: 30px;
   }
   
-  .attention {
+  .benefits {
     padding-top: 94px;
   }
   
-  .benefits {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+  .benefits__item {
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: #212121;
     padding-bottom: 10px;
     align-items: baseline;
-    &-text {
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: #757575;
-      max-width: 270px;
-    }
-    &-icon-container {
-      display: flex;
-      width: 270px;
-      height: 120px;
-      justify-content: center;
-      align-items: center;
-      background-color: #f5f4fa;
-      border-radius: 4px;
-      margin-bottom: 30px;
-    }
   }
   
-  
+  .benefits__text {
+    @include font(null, 14px, 1.71, 0.03em);
+    color: #757575;
+    max-width: 270px;
+  }
+
+  .benefits__icon-container {
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    @extend %align-list;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+
+
+
   .doing {
     display: flex;
     gap: 30px;
@@ -99,14 +93,9 @@
 
   
   .doing-thumb-item {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--main-color);
-    display: flex;
   position: absolute;
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
@@ -114,7 +103,7 @@
   padding-top: 27px;
   padding-bottom: 27px;
   justify-content: center;
-  align-items: center;
+  @extend %align-list;
   bottom: 0;
   right: 0;
   
